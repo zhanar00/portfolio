@@ -1,0 +1,542 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+}
+  
+
+/* transition */
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+nav, .nav-links {
+    display: flex;
+}
+
+.header {
+    background: rgb(246,248,219);
+    background: radial-gradient(circle, rgba(246,248,219,1) 35%, rgba(243,212,248,1) 92%);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.header-title {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.header-title:hover {
+    cursor: default;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+/* hamburger menu */
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer; 
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span :first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span :nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span :last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span :first-child {
+    transform: none;
+}
+
+.hamburger-icon span :first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span :first-child {
+    transform: none;
+}
+
+/* main section */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10%;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.picture-container {
+    display: flex;
+    height: auto;
+    max-width: 40%;
+    margin: auto 0;
+}
+
+.picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Сохранение пропорций изображения */
+}
+
+.text-container {
+    align-self: center;
+    text-align: center;
+    width: 40%;
+    font-family: "Poppins", sans-serif;
+}
+
+.hello-text {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.about-text {
+    /* font-size: 80%; */
+    text-align: center;
+    margin-bottom: 1rem;
+    color: grey;
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+}
+
+.title {
+    font-size: 42px;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+#social-media-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.sm-icon {
+    height: 2rem;
+    cursor: pointer;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-resume {
+    border: rgb(53, 53, 53) 0.1rem solid;
+    background-color: transparent; 
+}
+
+.btn-contact {
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-resume:hover, .btn-contact:hover {
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+}
+
+
+/* family */
+
+/* Basic Styling for the Family Section */
+#fam {
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Grid Layout */
+.grid__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Adds space between the cards */
+    justify-content: space-around;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px; /* Fixed width for each card */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Slightly elevate the card on hover */
+}
+
+/* Image Styling */
+.img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Text Styling */
+.card p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+
+/* hobbies */
+
+#hobby-main {
+    gap: 5rem;
+    justify-content: center;
+
+}
+
+.hobby-title {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.hobby-section {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 2rem;
+}
+
+
+.hobby-picture-container {
+    display: flex;
+    flex: 1 1 300px; 
+    max-width: 400px; 
+    height: auto;
+    margin: auto 0;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.hobby-pic {
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+}
+
+.text-container {
+    flex: 2 1 300px; 
+    max-width: 600px;
+    padding: 1rem;
+    text-align: left;
+}
+
+/* education */
+
+
+.edu-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.edu-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.edu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.edu-holder {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.edu-img {
+    border-radius: 20px;
+}
+
+.sdu-icon {
+    border-radius: 20px;
+}
+
+.edu-text {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.skill-section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skills-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    gap: 1rem;
+}
+
+.skill-bar {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    height: 10px;
+    width: 85%;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-level {
+    background-color: orange;
+    height: 100%;
+    /* width: 100px; */
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+
+/* contact */
+
+.cont-holder {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.location {
+    margin-top: 20px;
+}
+
+.contact-form {
+    background-color: transparent;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    width: 400px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.contact-form h1 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #c696c9;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #d0a4eb;
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        width: 90%;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
+
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav id="desktop-nav">
+                <div class="header-title">Portfolio</div>
+                    <ul class="nav-links">
+                        <li><a href="about.html" class="about">About</a></li>
+                        <li><a href="family.html" class="family">Family</a></li>
+                        <li><a href="hobbies.html" class="hobbies">Hobbies and Interests</a></li>
+                        <li><a href="education.html" class="education">Education</a></li>
+                        <li><a href="contact.html" class="contact">Contacts</a></li>
+                    </ul>
+            </nav>
+            <nav id="hamburger-nav">
+                <div class="header-title">Portfolio</div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                        <li><a href="family.html" onclick="toggleMenu()">Family</a></li>
+                        <li><a href="hobbies.html" onclick="toggleMenu()">Hobbies and Interests</a></li>
+                        <li><a href="education.html" onclick="toggleMenu()">Education</a></li>
+                        <li><a href="contact.html" onclick="toggleMenu()">Contacts</a></li>
+                    </div>
+                </div>
+            </nav>
+            <section id="hobby-main">
+                <div class="hobby-title">My hobbies</div>
+                <div class="hobby-section">
+                    <div class="hobby-picture-container">
+                        <img src="./img/hobby1 (1).jpg" alt="photo of me" class="hobby-pic">
+                    </div>
+                    <div class="text-container">
+                        <div class="hello-text">
+                            I love nature and animals.
+                        </div>
+                        <div class="about-text">
+                            One of my favorite activities is observing animals and their behavior in their natural habitat. Nature always inspires me with its beauty and tranquility. I find peace in spending time outdoors, watching the movement of water, listening to birds sing, and observing animals in their natural environment. It helps me relax and recharge.
+                        </div>
+                    </div>
+                </div>
+                <div class="hobby-section">
+                    <div class="hobby-picture-container">
+                        <img src="./img/hobby1 (2).jpg" alt="photo of me" class="hobby-pic">
+                    </div>
+                    <div class="text-container">
+                        <div class="hello-text">
+                            I enjoy visiting exhibitions and admiring paintings.
+                        </div>
+                        <div class="about-text">
+                            Art has always been a source of inspiration and reflection for me. I love visiting art galleries and exhibitions, where I can immerse myself in the creativity of artists from different eras. Paintings, in particular, captivate me with their colors, textures, and the stories they tell. Each artwork offers a unique perspective and allows me to see the world through the artist’s eyes. Whether it’s classic masterpieces or modern works, I find joy in exploring the emotions and ideas conveyed through art.
+                        </div>
+                    </div>
+                </div>
+                <div class="hobby-section">
+                    <div class="hobby-picture-container">
+                        <img src="./img/hobby1 (3).jpg" alt="photo of me" class="hobby-pic">
+                    </div>
+                    <div class="text-container">
+                        <div class="hello-text">
+                            I also have a deep love for mountains and breathtaking landscapes.
+                        </div>
+                        <div class="about-text">
+                            There’s something incredibly peaceful about being surrounded by towering mountains and vast, open spaces. Hiking through mountain trails and taking in the stunning views fills me with a sense of awe and wonder. The fresh air, the quietness, and the beauty of nature at high altitudes help me clear my mind and feel connected to the world around me. Whether it’s watching a sunrise from a mountain peak or simply enjoying the scenery, I always find inspiration in the majesty of the mountains.
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>

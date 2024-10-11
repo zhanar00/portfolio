@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav id="desktop-nav">
+                <div class="header-title">Portfolio</div>
+                    <ul class="nav-links">
+                        <li><a href="about.html" class="about">About</a></li>
+                        <li><a href="family.html" class="family">Family</a></li>
+                        <li><a href="hobbies.html" class="hobbies">Hobbies and Interests</a></li>
+                        <li><a href="education.html" class="education">Education</a></li>
+                        <li><a href="contact.html" class="contact">Contacts</a></li>
+                    </ul>
+            </nav>
+            <nav id="hamburger-nav">
+                <div class="header-title">Portfolio</div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                        <li><a href="family.html" onclick="toggleMenu()">Family</a></li>
+                        <li><a href="hobbies.html" onclick="toggleMenu()">Hobbies and Interests</a></li>
+                        <li><a href="education.html" onclick="toggleMenu()">Education</a></li>
+                        <li><a href="contact.html" onclick="toggleMenu()">Contacts</a></li>
+                    </div>
+                </div>
+            </nav>
+            <section id="main">
+                <div class="picture-container">
+                    <img src="./img/circular_image_2.png" alt="photo of me" class="picture">
+                </div>
+                <div class="text-container">
+                    <div class="hello-text">Hello, my name is</div> 
+                    <div class="title">Bimurzaeva Zhanar</div>
+                    <div class="about-text">I am a front-end developer. I specialize in creating modern, responsive, and user-friendly web applications with a focus on delivering seamless user experiences.</div>
+                    <div class="btn-container">
+                        <button class="btn btn-resume" onclick="window.open('./img/Resume24.pdf')">CV</button>
+                        <button class="btn btn-contact" onclick="location.href='contact.html'">Contacts</button>
+                    </div>
+                    <div id="social-media-links">
+                        <img src="./img/github.png" alt="GitHub" class="sm-icon" onclick="location.href='https://github.com/zhanar00?tab=repositories'">
+                        <img src="./img/linkedin.png" alt="LinkedIn" class="sm-icon" onclick="location.href='https://www.linkedin.com/in/zhanar-bimurzaeva-571a822a4/'">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>
