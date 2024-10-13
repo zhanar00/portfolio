@@ -36,8 +36,9 @@ nav, .nav-links {
 }
 
 .container {
-    max-width: 1290px;
+    max-width: 1480px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .header-title {
@@ -273,11 +274,11 @@ section {
     font-family: 'Arial', sans-serif;
 }
 
-.container {
+/* .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-}
+} */
 
 /* Grid Layout */
 .grid__content {
@@ -447,6 +448,19 @@ section {
     transition: width 0.4s ease;
 }
 
+.skill{
+    display: flex;
+    margin: 2rem;
+}
+
+.skill p{
+    font-family: "Poppins", sans-serif;
+}
+
+.skill li{
+    color: #767676;
+    font-family: "Poppins", sans-serif;
+}
 
 /* contact */
 
